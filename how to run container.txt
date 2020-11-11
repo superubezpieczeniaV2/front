@@ -1,0 +1,2 @@
+docker build -t frontend-superubezpieczenia .
+docker run -d -it -p 8000:80 --name frontend-superubezpieczenia frontend-superubezpieczenia
