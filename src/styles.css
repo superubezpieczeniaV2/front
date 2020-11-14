@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url('./app/assets/fonts/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url('./app/assets/fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: InriaSans-Light;
+    src: url('./app/assets/fonts/InriaSans-Light.ttf');
+}
+
+.raleway-med {
+    font-family: Raleway-Medium;
+}
+
+.mont-light {
+    font-family: InriaSans-Light;
+}
+
+.raleway-extra {
+    font-family: Raleway-ExtraBold;
+}

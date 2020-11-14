@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="/">
+</head>
+<body>
+    <app-root></app-root>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("navbar").style.height = "7vh";
+            document.getElementById("navbar").style.backgroundColor = "#E07900";
+            document.getElementById("navbar").style.filter = "drop-shadow(0px 20px 10px rgba(0,0,0, .05))"
+            document.getElementById('container').classList.remove('flex-column')
+        } else {
+            document.getElementById("navbar").style.height = "12vh";
+            document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0, .0)";
+            document.getElementById("navbar").style.filter = "none"
+            document.getElementById('container').classList.add('flex-column')
+            
+        }
+        }
+    </script>
+</body>
+</html>
